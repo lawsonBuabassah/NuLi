@@ -14,8 +14,8 @@ class GPTServices{
         try {
             const apiResponse = await openai.completions.create({
                 model: 'text-davinci-003',
-                max_tokens: 100,
-                temperature: 0.5,
+                max_tokens: 150,
+                temperature: 0.1,
                 prompt: myRequest
             });
 
