@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css" type="text/css" />
+    <title>BridgeBorders | Travel & Educational Consulting</title>
+    <meta name="description" content="Study Abroad Consultation 
+    Cheapest Flight Rates 
+    Tailor Made Travel Services" />
+</head>
+<body>
+    <!-- Hero Section -->
+    <section class="dark:bg-gray-800 dark:text-gray-100">
+        <div class="container flex flex-col justify-center p-6 mx-auto sm:py-12 lg:py-24 lg:flex-row lg:justify-between">
+            <div class="flex items-center justify-center p-3 mt-5 lg:mt-0 h-72 sm:h-80 lg:h-96 xl:h-112 2xl:h-128">
+                <img src="../images/heroImage.png" alt="" class="object-contain h-72 sm:h-80 lg:h-96 xl:h-112 2xl:h-128">
+            </div>
+            <div class="flex flex-col justify-center p-6 text-center rounded-sm lg:max-w-md xl:max-w-lg lg:text-left">
+                <h1 class="text-5xl font-bold leadi sm:text-6xl">
+                    <span class="dark:text-violet-400">Nu</span>Li
+                </h1>
+                <p class="mt-6 mb-8 text-lg sm:mb-12">Your advanced AI companion.
+                    <br class="hidden md:inline lg:hidden">Exceptionally built to assist you in every way.
+                </p>
+                <div class="flex flex-col space-y-4 sm:items-center sm:justify-center sm:flex-row sm:space-y-0 sm:space-x-4 lg:justify-start">
+                    <a rel="noopener noreferrer" href="#chat" class="px-8 py-3 text-lg font-semibold rounded dark:bg-violet-400 dark:text-gray-900">Start Chat</a>
+                    <a rel="noopener noreferrer" href="#generate" class="px-8 py-3 text-lg font-semibold border rounded dark:border-gray-100">Generate Image</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Chat Section -->
+    <section class="flex flex-col justify-center dark:bg-gray-800 dark:text-gray-100 md:flex-row">
+        <div id="chat" class="flex flex-1 flex-col ml-11 m-10 px-2 py-5 rounded-lg dark:bg-violet-400 md:px-10">
+            <h1 class="text-3xl font-bold mb-5 leadi text-gray-800 text-center md:text-3xl">
+                Engage Nu<span class="text-white">Li</span> in a chat
+            </h1>
+            <div class="my-5 mx-5 rounded-lg">
+                <form class="form1">
+                    <textarea id="about" name="about" rows="3" class="block w-full rounded-md border-0 py-1.5 text-bold text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 placeholder:text-bold focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6" placeholder="Enter your prompt here..."></textarea>
+                    <button type="submit" rel="noopener noreferrer" href="#" class="px-8 py-3 mt-5 w-full text-lg font-semibold rounded bg-gray-800 text-white">Send</button>
+                </form>
+            </div>
+        </div>
+        <div class="flex flex-1 flex-col mr-11 m-10 px-10 py-5 rounded-lg bg-white">
+            <h1 id="responseArea" class="text-md font-bold mb-5 leadi text-gray-800 md:text-lg">
+                Response goes here...
+            </h1>
+        </div>
+    </section>
+    <!-- Generate image -->
+    <section class="dark:bg-gray-800 pt-16 dark:text-gray-100">
+        <h1 class="text-3xl text-center font-bold leadi md:text-4xl">
+            <span class="dark:text-violet-400">Nu</span>Li can also generate images. Try it out.
+        </h1>
+        <div class="flex flex-col mt-5 md:flex-row">
+            <div id="generate" class="flex flex-1 flex-col ml-11 m-10 px-2 py-5 rounded-lg dark:bg-violet-400 md:px-10">
+                <div class="my-5 mx-5 rounded-lg">
+                    <form class="form2">
+                        <textarea id="description" name="description" rows="3" class="block w-full rounded-md border-0 py-1.5 text-bold text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 placeholder:text-bold focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6" placeholder="Enter your description here..."></textarea>
+                        <button type="submit" rel="noopener noreferrer" href="#" class="px-8 py-3 mt-5 w-full text-lg font-semibold rounded bg-gray-800 text-white">Generate</button>
+                    </form>
+                </div>
+            </div>
+            <div class="flex flex-1 flex-col mr-11 m-10 px-10 py-5 rounded-lg bg-white">
+                <h1 class="text-xl font-bold mb-5 leadi text-gray-800 md:text-2xl">
+                    Image goes here...
+                </h1>
+                <img id="imageArea" src="" alt="">
+            </div>
+        </div>
+    </section>
+
+    <script src="../js/jquery-3.6.0.js"></script>
+  <script src="../js/script.js"></script>
+</body>
+</html>
