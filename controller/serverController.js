@@ -16,7 +16,7 @@ module.exports = function (app) {
     app.post('/gpt', urlencodedParser, async function (req, res) {
         console.log("GPT accessed");
 
-    const prompt = req.body.about;
+    const prompt = req.body.prompt;
 
     try {
         let gptResponse = await GPTServices.prompt(prompt);
